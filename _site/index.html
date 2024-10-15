@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="bundle.css"></link>
 		<title>My Blog</title>
 	</head>
 	<body>
@@ -13,4 +14,38 @@
 			
 <h2><a href="/post-1/">Onze posts</a></h2>
 <p><p>welkom op de leden pagina</p>
+			<ul class="card-label-filters">
+				<li class="label-filters">
+					service design
+				</li>
+				<li class="label-filters">label</li>
+			</ul>
+			<h3>bedrijfsnaam</h3>
+			<p>bedrijfsaddress</p>
+
+			<ul class="card-label">
+				<li>15  werknemers</li>
+				<li class="card-hiring">hiring</li>
+
+			</ul>
+
+			<Link href="/" clazz="detail-link"><span slot="link-text" class="details-hover">Details</span>
+			<svg class="details-hover" width="16" height="16" slot="svg-icon-right" viewBox="0 0 24 24" fill="none">
+				<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round"
+					  stroke-linejoin="round"/>
+			</svg>
+			<a href={href} class={clazz}>
+				<!--Bij sommmige links staat het icoon/svg aan de linker kant deze kun je dan aanroepen met slot="svg-icon-left"
+                in het component-->
+				<slot name="svg-icon-left"/>
+
+				<slot name="link-text"/>
+
+				<slot name="svg-icon-right"/>
+			</a>
+
+			</article>
+
+
+			</section>
 		</main>
