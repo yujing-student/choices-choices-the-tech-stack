@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "> _Fork_ deze leertaak en ga aan de slag. \r Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. \r De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md)",
   "main": "index.js",
-  "type": "module",
   "directories": {
     "doc": "docs"
   },
@@ -14,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.2",
-    "@directus/sdk": "^17.0.2"
+    "@11ty/eleventy": "^3.0.0"
   }
 }
