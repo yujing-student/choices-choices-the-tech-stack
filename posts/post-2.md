@@ -1,4 +1,4 @@
 ---
-title: Post 1
+title: Post 2
 ---
 Post content.
