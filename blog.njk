@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+permalink: "blog/index.html"
+title: Blog
+---
+
+<h1>{{ title }}</h1>
+<ul>
+    {% for agencies in agencies %}
+        <a href="/agencies/{{ agencies.slug }}">
+            <h2>{{ agencies.title }}</h2>
+        </a>
+        <span>
+            {{ agencies.publish_date }} &bull; {{ agencies.author.name }}
+        </span>
+    {% endfor %}
+</ul>
