@@ -1,4 +1,4 @@
 ---
 title: Post 1
 ---
-Post content.
+Post content. fit is in de map post
