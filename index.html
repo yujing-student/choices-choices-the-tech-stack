@@ -1,11 +1,31 @@
-﻿---
-layout: layout.html
+﻿ ---
+layout: base.njk
 permalink: bundle.css
----
+ ---
 {% for post in collections.post %}
 <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
 <p>{{ post.templateContent }}</p>
 {% endfor %}
+
+
+<!-- dit hoorde bij _site hierboven-->
+
+
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>My Rad Blog</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<main>-->
+<!--    <h1>My Rad Markdown Blog Post</h1>-->
+<!--</main>-->
+<!--</body>-->
+<!--</html>-->
+
 
 
 <!--<!doctype html>-->
@@ -21,7 +41,7 @@ permalink: bundle.css
 <!--</header>-->
 <!--<main>-->
 
-<!--    <h2><a href="/post-1/">Onze posts</a></h2>-->
+<!--    <h2><a href="/blog-1/">Onze blog</a></h2>-->
 <!--    <p><p>welkom op de leden pagina</p>-->
 <!--    </p>-->
 
