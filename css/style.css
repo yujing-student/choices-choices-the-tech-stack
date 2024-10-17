@@ -152,6 +152,18 @@ main {
     }
 }
 
+/*eind eglobal*/
+
+/*members card*/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
 
 
 
