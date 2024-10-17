@@ -4,4 +4,5 @@ module.exports = function (eleventyConfig) {
 
     // Watch the `css` directory for changes
     eleventyConfig.addWatchTarget('css');
+
 };
