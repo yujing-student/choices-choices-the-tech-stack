@@ -1,10 +1,14 @@
 ---
 layout: mylayout.njk
 title: ga naar member pagina
+eleventyComputed:
+title: "{{ agencies.title }}"
 ---
 <h1>{{ title }}</h1>
 
 <a href="/member">ga naar member</a>
+<a href="/test">ga naar test</a>
+<p>{{ agencies.description }}</p>
 
 
 <style>
