@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no member specified\" && exit 1"
+    "test": "echo \"Error: no src/member specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
