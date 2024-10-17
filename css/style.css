@@ -313,4 +313,5 @@ img {
     font-weight: bold;
     color: var(--blue);
     stroke: var(--blue); /* blue color for svg */
+    vertical-align: middle;
 }
