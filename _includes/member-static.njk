@@ -3,13 +3,13 @@
 
     <span >TERUG NAAR HOME</span>
     <h1>Onze leden</h1>
-    <p>
+    <p class="text-intro">
 
         De [nummer] beste digitale bureaus van Nederland zijn verenigd in Dutch Digital Agencies. Zet de juiste
         filters aan en zoek contact met het bureau dat het beste bij past bij jouw vraagstuk en uitdaging.
     </p>
 
-    <p>
+    <p class="text-intro">
         Ook DDA lid worden? Ga dan naar <span class="specific-text-decoration">deze pagina</span> voor meer
         informatie
     </p>
@@ -41,14 +41,21 @@
 
         </ul>
 
-        <Link href="/" clazz="detail-link"><span slot="link-text">Details</span>
-        <svg width="16" height="16" slot="svg-icon-right" viewBox="0 0 24 24" fill="none" aria-label="ga naar details">
+
+        <span class="detail-link">Details   <svg class="detail-link" width="16" height="16" slot="svg-icon-right" viewBox="0 0 24 24" fill="none" aria-label="ga naar details">
             <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round"/>
-        </svg>
-        </Link>
+        </svg></span>
+
 
     </article>
 
 
 </section>
+
+<style>
+    .detail-link{
+        font-size: 18px;
+        color: blue;
+    }
+</style>
