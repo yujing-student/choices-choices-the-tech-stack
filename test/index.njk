@@ -1,6 +1,6 @@
 {% include 'mylayout.njk' %}
 
-
+<!--https://fdnd-agency.directus.app/items/dda_agencies/-->
 <section class="intro">
 
 
@@ -19,14 +19,13 @@
 </section>
 <section class="grid-container">
 
-
     <h2 aria-label="leden" class="hide-members">Leden</h2>
-    {% for dda_agencies in agencies %}
+    {% for agencies in dda_agencies %}
 
     <article class="card">
         <picture>
-            <source srcset="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo }}?format=avif" type="image/avif">
-            <source srcset="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo }}?format=webp" type="image/avif">
+            <source srcset="https://fdnd-agency.directus.app/assets/{{agencies.photo }}?format=avif" type="image/avif">
+            <source srcset="https://fdnd-agency.directus.app/assets/{{agencies.photo }}?format=webp" type="image/avif">
             <img src="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo}}" loading="lazy" alt="foto van het bedrijf">
         </picture>
 
@@ -37,11 +36,11 @@
             <li class="label-filters">label</li>
         </ul>
 
-        <h3 aria-label="bedrijfsnaam {member.title}">{{ dda_agencies.title }}</h3>
-        <p>{{ dda_agencies.address }}</p>
+        <h3 aria-label="bedrijfsnaam {member.title}">{{ agencies.title }}</h3>
+        <p>{{ agencies.address }}</p>
 
         <ul class="card-label">
-            <li>50  </li>
+            <li>{{agencies.colleagues }} </li>
             <li>werknemers</li>
             <li class="card-hiring">hiring</li>
 
