@@ -21,12 +21,12 @@
     <p>{{ dda_agencies.description }}</p>
 
     <h2 aria-label="leden" class="hide-members">Leden</h2>
-    {% for dda_agencies in agencies %}
+    {% for agencies in dda_agencies %}
 
     <article class="card">
         <picture>
-            <source srcset="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo }}?format=avif" type="image/avif">
-            <source srcset="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo }}?format=webp" type="image/avif">
+            <source srcset="https://fdnd-agency.directus.app/assets/{{agencies.photo }}?format=avif" type="image/avif">
+            <source srcset="https://fdnd-agency.directus.app/assets/{{agencies.photo }}?format=webp" type="image/avif">
             <img src="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo}}" loading="lazy" alt="foto van het bedrijf">
         </picture>
 
@@ -37,8 +37,8 @@
             <li class="label-filters">label</li>
         </ul>
 
-        <h3 aria-label="bedrijfsnaam {member.title}">{{ global.title }}</h3>
-        <p>{{ global.address }}</p>
+        <h3 aria-label="bedrijfsnaam {member.title}">{{ agencies.title }}</h3>
+        <p>{{ agencies.address }}</p>
 
         <ul class="card-label">
             <li>50  </li>

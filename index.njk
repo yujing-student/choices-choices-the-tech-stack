@@ -1,6 +1,6 @@
 ---
+layout: mylayout.njk
 eleventyComputed:
-title: "{{ dda_agencies.title }}"
 ---
 
 <p>{{ dda_agencies.description }}</p>
@@ -12,6 +12,7 @@ title: "{{ dda_agencies.title }}"
 <a href="/member">ga naar members page statisch</a>
 <hr>
 <a href="/test">ga naar de memberspage met data uit databse</a>
+<a href="/data">ga naar de memberspage met data uit json</a>
 
 
 {% for dda_agencies in agencies %}
