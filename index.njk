@@ -1,17 +1,55 @@
+---
+eleventyComputed:
+title: "{{ dda_agencies.title }}"
+---
 
-<h1>{{ title }}</h1>
+<p>{{ dda_agencies.description }}</p>
+<p>{{ dda_agencies.description }}</p>
 
-
-
-
+<!--https://fdnd-agency.directus.app/items/dda_agencies/-->
 <h1>{{ title }}</h1>
 
 <a href="/member">ga naar members page statisch</a>
 <hr>
-<a href="/data">ga naar de memberspage met data uit json</a>
+<a href="/test">ga naar de memberspage met data uit databse</a>
 
 
+{% for dda_agencies in agencies %}
 
+<article class="card">
+    <picture>
+        <source srcset="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo }}?format=avif" type="image/avif">
+        <source srcset="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo }}?format=webp" type="image/avif">
+        <img src="https://fdnd-agency.directus.app/assets/{{dda_agencies.photo}}" loading="lazy" alt="foto van het bedrijf">
+    </picture>
+
+    <ul class="card-label-filters">
+        <li class="label-filters">
+            service design
+        </li>
+        <li class="label-filters">label</li>
+    </ul>
+
+    <h3 aria-label="bedrijfsnaam {member.title}">{{ dda_agencies.title }}</h3>
+    <p>{{ dda_agencies.address }}</p>
+
+    <ul class="card-label">
+        <li>50  </li>
+        <li>werknemers</li>
+        <li class="card-hiring">hiring</li>
+
+    </ul>
+
+
+    <span class="detail-link">Details   <svg class="detail-link" width="16" height="16" slot="svg-icon-right" viewBox="0 0 24 24" fill="none" aria-label="ga naar details">
+            <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg></span>
+
+
+</article>
+
+{% endfor %}
 
 <style>
     a{
