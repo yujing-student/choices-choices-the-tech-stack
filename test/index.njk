@@ -18,7 +18,6 @@
     </p>
 </section>
 <section class="grid-container">
-    <p>{{ dda_agencies.description }}</p>
 
     <h2 aria-label="leden" class="hide-members">Leden</h2>
     {% for agencies in dda_agencies %}
@@ -41,7 +40,7 @@
         <p>{{ agencies.address }}</p>
 
         <ul class="card-label">
-            <li>50  </li>
+            <li>{{agencies.colleagues }} </li>
             <li>werknemers</li>
             <li class="card-hiring">hiring</li>
 
